@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<style>
+    main{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: solid black 1px;
+        border-radius: 20px;
+        width:300px;
+        background-color: rgb(216, 215, 215);
+        position:fixed;
+        top: 50%;
+        left:50%;
+        margin-left:-201px;
+        margin-top:-137px;        
+    }  
+    body h1{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    body h3{
+        width:230px;
+        height:30px;
+        padding: 5px 10px 0 10px;
+        text-align: end;
+        border: solid black 1px;
+        border-radius: 5px;
+        background-color: rgb(146, 216, 40);
+        margin: 0 auto 10px;
+    }
+    body div{
+        margin: 0 33px;
+    }
+    body .lastline{
+        margin-bottom: 20px;;
+    }
+    body button{
+        width: 51px;
+        height: 30px;
+        margin: 2px 2px;
+    }
+</style>
+
+<body>
+    
+    <main>
+        <h1>Calculadora</h1>
+        <h3 id = "valor1"> </h3>
+        <div>
+            <button type="button" onclick="botaoApa()">&lt-</button>
+            <button type="button" onclick="botaoCE()">CE</button> <!--Zera somente o valor sendo editado-->
+            <button type="button" onclick="botaoC()">C</button> <!--Reinicia por completo-->
+            <button type="button" onclick="botaoDiv()">/</button>
+        </div>
+        <div>
+            <button type="button" onclick="botao7()">7</button>
+            <button type="button" onclick="botao8()">8</button>
+            <button type="button" onclick="botao9()">9</button>
+            <button type="button" onclick="botaoMult()">x</button>
+        </div>
+        <div>
+            <button type="button" onclick="botao4()">4</button>
+            <button type="button" onclick="botao5()">5</button>
+            <button type="button" onclick="botao6()">6</button>
+            <button type="button" onclick="botaoSub()">-</button>
+        </div>
+        <div>
+            <button type="button" onclick="botao1()">1</button>
+            <button type="button" onclick="botao2()">2</button>
+            <button type="button" onclick="botao3()">3</button>
+            <button type="button" onclick="botaoSoma()">+</button>
+        </div>
+        <div class="lastline">
+            <button type="button" onclick="botaoInv()">+/-</button>
+            <button type="button" onclick="botao0()">0</button>
+            <button type="button" onclick="botaoPont()">.</button>
+            <button type="button" onclick="botaoRes()">=</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
